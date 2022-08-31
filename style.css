@@ -1,9 +1,19 @@
+/* 
+* gave mainpageheader template #stickyheaders but didn't use it *
+Both Header-All and finalmainpageheader have id #topheader
+*/
+
+
+/* ============== Start from Code Snippets Plugin ================= */
+/* div element containing #topheader. id given by Elementor? */
+/* hide the #stickyheader */
 #stickyheader {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
   transition: transform 400ms, background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s ease-in-out;
 }
 
+/* show the #stickyheader when adding class .headerAppear */
 #stickyheader.headerAppear {
   -webkit-transform: translateY(0);
   transform: translateY(0);
@@ -11,19 +21,48 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+
+
+/* given #topheader in Elementor => template builder => Header-All and finalmainpageheader => Edit Section => Advanced */
+/* replace logo with smaller one */
+#topheader.logoSmall img {
+  content: url('https://oasislandscape.com/wp-content/uploads/2021/01/oasis-35-trans.png');
+}
+
+/* replace logo with larger one */
+#topheader.logoLarge img {
+  content: url('https://oasislandscape.com/wp-content/uploads/2020/12/OLI_Logo_hor_col.png');
+}
+
+/* not used. there is no 'normal' display value. did he mean 'static'? */
+.theMainHeaderSection {
+  display: normal
+}
+
+/* ============ End Code Snippets Plugin ==================== */
+
+/* =========== Start Header-All template Edit Section => Custom CSS ============ */
+#topheader.elementor-sticky--effects {
+  transition: all .2s ease;
+}
+
+#topheader.elementor-sticky--effects .logo img {
+  content: url('https://oasislandscape.com/wp-content/uploads/2021/01/OLI_Logo_hor_colXSmall-60.png');
+}
+
+.logo img {
+  width: auto;
+  max-height: 95px;
+}
+
+.elementor-sticky--active .logo img {
+  max-height: 80px;
+  width: auto;
+}
+
 #topheader.shrinkHeader {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   padding: 10px;
 }
 
-#topheader.logoSmall img {
-  content: url('https://oasislandscape.com/wp-content/uploads/2021/01/oasis-35-trans.png');
-}
-
-#topheader.logoLarge img {
-  content: url('https://oasislandscape.com/wp-content/uploads/2020/12/OLI_Logo_hor_col.png');
-}
-
-.theMainHeaderSection {
-  display: normal
-}
+/* ============== End Header-All template Custom CSS =============== */

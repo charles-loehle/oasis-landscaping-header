@@ -1,8 +1,12 @@
 
+// Elementor sticky header
 const theHomeHeader = document.querySelector('#stickyheader');
+// Both header templates
 const theHeader = document.querySelector('#topheader');
 
+// hero section on home page only
 const sectionOne = document.querySelector('#main-section');
+// header for all pages except home page
 const headerSection = document.querySelector('#allHeader');
 
 const options = {
@@ -54,6 +58,7 @@ if (headerSection != null) {
   allHeaderObserver.observe(headerSection);
 };
 
+// /* gave mainpageheader template #stickyheaders but didn't use it */
 /*
 document.addEventListener('DOMContentLoaded', function() {
 jQuery(function($){
