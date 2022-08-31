@@ -1,10 +1,10 @@
 
-// Elementor sticky header
+// homepage sticky header 'OASIS'
 const theHomeHeader = document.querySelector('#stickyheader');
-// Both header templates
+// both headers. big logo header and 'OASIS'
 const theHeader = document.querySelector('#topheader');
 
-// hero section on home page only
+// home page hero section
 const sectionOne = document.querySelector('#main-section');
 // header for all pages except home page
 const headerSection = document.querySelector('#allHeader');
