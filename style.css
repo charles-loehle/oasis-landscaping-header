@@ -1,0 +1,51 @@
+/* finalmainpageheader ====================== */
+#stickyheader {
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	transition: transform 400ms, background 0.3s, border 0.3s, border-radius 0.3s,
+		box-shadow 0.3s ease-in-out;
+}
+
+#stickyheader.headerAppear {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+/* End finalmainpageheader =============== */
+
+/* Header-All ==================================== */
+/* #topheader.shrinkHeader {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+} */
+
+/* #topheader.logoSmall img {
+	content: url('https://oasislandscape.com/wp-content/uploads/2021/01/oasis-35-trans.png');
+}
+
+#topheader.logoLarge img {
+	content: url('https://oasislandscape.com/wp-content/uploads/2020/12/OLI_Logo_hor_col.png');
+} */
+
+/* .theMainHeaderSection {
+	display: normal;
+} */
+
+/* Lytebox Swithcing Headers Tut ==================== */
+.header-2 {
+	transform: translateY(-212px);
+	-moz-transition: all 0.3s ease !important;
+	-webkit-transition: all 0.3s ease !important;
+	transition: all 0.3s ease !important;
+}
+
+.elementor-sticky--effects.header-2 {
+	height: auto !important;
+	transform: translatey(0px);
+}
+
+.elementor-sticky--effects.topheader {
+	display: none !important;
+}
+/* End Lytebox Swithcing Headers Tut ================== */
